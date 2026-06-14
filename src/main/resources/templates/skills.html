@@ -1,44 +1,27 @@
 <!DOCTYPE html>
 
 <html>
+    <head>
+        <title>
+            Skills
+        </title>
+    </head>
 
-<head>
+    <body>
+        <h1>
+            My Skills
+        </h1>
 
-<title>
-Skills
-</title>
+        <ul>
+            <li th:each="skill : ${skills}">
+                <span th:text="${skill.name}"></span>
+                    -
+                <span th:text="${skill.level}"></span>
+            </li>
+        </ul>
 
-</head>
-
-<body>
-
-<h1>
-My Skills
-</h1>
-
-<ul>
-
-<li
-th:each="skill : ${skills}">
-
-<span
-th:text="${skill.name}">
-</span>
-
--
-
-<span
-th:text="${skill.level}">
-</span>
-
-</li>
-
-</ul>
-
-<a href="/">
-Home
-</a>
-
-</body>
-
+        <a href="/">
+            Home
+        </a>
+    </body>
 </html>
