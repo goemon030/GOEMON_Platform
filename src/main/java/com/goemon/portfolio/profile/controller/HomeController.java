@@ -23,4 +23,18 @@ public class HomeController {
 
     }
 
+    @GetMapping("/about")
+    public String about(
+            Model model
+    ) {
+
+        model.addAttribute(
+                "title",
+                "About Me"
+        );
+
+        return "about";
+
+    }
+
 }
