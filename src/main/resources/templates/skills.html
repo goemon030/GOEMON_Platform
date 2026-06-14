@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Skills
+</title>
+
+</head>
+
+<body>
+
+<h1>
+My Skills
+</h1>
+
+<ul>
+
+<li
+th:each="skill : ${skills}">
+
+<span
+th:text="${skill.name}">
+</span>
+
+-
+
+<span
+th:text="${skill.level}">
+</span>
+
+</li>
+
+</ul>
+
+<a href="/">
+Home
+</a>
+
+</body>
+
+</html>
