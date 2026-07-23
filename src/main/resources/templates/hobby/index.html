@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hobby</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Hobby</title>
-</head>
+    <body>
+        <h1>趣味</h1>
+        <p>
+            私が現在楽しんでいる趣味を紹介します。
+        </p>
 
-<body>
+        <hr>
+        <h2>🎵 音楽制作</h2>
 
-<h1>趣味</h1>
+        <p>
+            過去に制作した楽曲や活動内容を紹介しています。
+        </p>
 
-<p>
-私が現在楽しんでいる趣味を紹介します。
-</p>
+        <a th:href="@{/hobby/music}">
+            音楽制作ページへ →
+        </a>
 
-<hr>
+        <hr>
 
-<h2>🎵 音楽制作</h2>
+        <h2>☕ コーヒー</h2>
 
-<p>
-過去に制作した楽曲や活動内容を紹介しています。
-</p>
+        <p>
+            コーヒーのレビューやAI診断サービスを公開しています。
+        </p>
 
-<a th:href="@{/hobby/music}">
-    音楽制作ページへ →
-</a>
+        <a th:href="@{/hobby/coffee}">
+            コーヒーページへ →
+        </a>
 
-<hr>
-
-<h2>☕ コーヒー</h2>
-
-<p>
-コーヒーのレビューやAI診断サービスを公開しています。
-</p>
-
-<a th:href="@{/hobby/coffee}">
-    コーヒーページへ →
-</a>
-
-</body>
-
+        <a href="/">
+            Home
+        </a>
+    </body>
 </html>
