@@ -1,30 +1,135 @@
 <!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 
-<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>GOEMON | Portfolio</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" th:href="@{/css/index.css}">
+    </head>
+
     <body>
-        <h1 th:text="${name}">
-            Default
-        </h1>
+        <!-- Header -->
+        <header class="header">
+            <a th:href="@{/}" class="logo">
+                GOEMON
+            </a>
 
-        <p>
-            Backend Engineer
-        </p>
+            <button class="menu-button" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
 
-        <p>
-            Spring / AWS
-        </p>
 
-        <a href="/about">
-            About
-        </a>
-        <br>
-        <a href="/skills">
-            Skills
-        </a>
-        <br>
-        <a href="/hobby">
-            Hobby
-        </a>
+        <main>
+
+            <!-- Profile -->
+            <section class="profile">
+
+                <div class="profile-image">
+                    <!-- プロフィール画像を後ほど配置 -->
+                    <img src="" alt="GOEMON">
+                </div>
+
+                <div class="profile-detail">
+
+                    <div class="profile-title">
+                        <h1>GOEMON</h1>
+                        <p>System Engineer</p>
+                    </div>
+
+                    <dl class="profile-list">
+                        <div>
+                            <dt>Name</dt>
+                            <dd>島田 海人</dd>
+                        </div>
+
+                        <div>
+                            <dt>HandleName</dt>
+                            <dd>GOEMON</dd>
+                        </div>
+
+                        <div>
+                            <dt>Job</dt>
+                            <dd>System Engineer</dd>
+                        </div>
+
+                        <div>
+                            <dt>About Me</dt>
+                            <dd>
+                                Java/Springを中心としたバックエンド開発を得意とするシステムエンジニア。
+                                AWS/インフラ領域も業務で触れながら、フロントエンド開発は個人で学習中。
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>Profile</dt>
+                            <dd>
+                                2016/04 - 2020/03　東京農工大学 工学部 情報工学科<br>
+                                2020/04 - 2023/03　東京都特別区 電気技術職員<br>
+                                2023/04 - 2026/06　株式会社WorksHumanIntelligence
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>Hobby</dt>
+                            <dd>
+                                音楽ゲーム / 音楽制作 / キャンプ / コーヒー / クラフトビール
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <div class="links">
+                        <a th:href="@{/profile}">→ Profile</a>
+                        <a th:href="@{/skill}">→ Skill</a>
+                        <a th:href="@{/hobby}">→ Hobby</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skill -->
+            <section class="skill">
+                <h2>Skill</h2>
+
+                <div class="skill-list">
+                    <a th:href="@{/skill/java}" class="skill-item">
+                        <span>Java</span>
+                    </a>
+                    <a th:href="@{/skill/spring}" class="skill-item">
+                        <span>Spring</span>
+                    </a>
+                    <a th:href="@{/skill/aws}" class="skill-item">
+                        <span>AWS</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Hobby -->
+            <section class="hobby">
+                <h2>Hobby</h2>
+
+                <div class="hobby-list">
+                    <a th:href="@{/hobby/music}" class="hobby-item">
+                        <span>Music</span>
+                    </a>
+                    <a th:href="@{/hobby/coffee}" class="hobby-item">
+                        <span>Coffee</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>
+                Copyright © 2026 GOEMON | All Rights Reserved
+            </p>
+        </footer>
 
     </body>
 </html>
