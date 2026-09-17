@@ -13,18 +13,7 @@
 
     <body>
         <!-- Header -->
-        <header class="header">
-            <a th:href="@{/}" class="logo">
-                GOEMON
-            </a>
-
-            <button class="menu-button" type="button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </header>
-
+        <header th:replace="~{fragments/header :: header}"></header>
 
         <main>
 
