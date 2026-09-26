@@ -298,37 +298,10 @@ main {
 
 
 /* =========================
-   Footer
-========================= */
-
-.footer {
-    min-height: 80px;
-    padding: 25px 40px;
-
-    display: flex;
-    align-items: center;
-
-    background-color: #fff;
-}
-
-.footer p {
-    margin: 0;
-
-    color: #999;
-    font-size: 8px;
-}
-
-
-/* =========================
    Responsive
 ========================= */
 
 @media screen and (max-width: 768px) {
-
-    .header {
-        height: 56px;
-        padding: 0 20px;
-    }
 
     main {
         padding: 30px 20px;
