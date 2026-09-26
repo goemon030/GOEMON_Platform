@@ -1,3 +1,71 @@
+/* =========================
+   Header
+========================= */
+
+.header {
+    height: 64px;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+}
+
+.logo {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-button {
+    width: 32px;
+    height: 32px;
+
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #333;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    min-height: 80px;
+    padding: 25px 40px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #fff;
+}
+
+.footer p {
+    margin: 0;
+
+    color: #999;
+    font-size: 8px;
+}
+
 /* ========================================
 Skill Page
 ======================================== */
