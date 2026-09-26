@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | GOEMON</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" th:href="@{/css/skill.css}">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header th:replace="~{fragments/header :: header}"></header>
+
+
+    <main class="skill-page">
+
+        <!-- Page Title -->
+        <section class="skill-page_title">
+            <h1>Skill</h1>
+            <p class="skill-page_lead">技術・業務経験について紹介します。</p>
+        </section>
+
+        <!-- Technical Skillset -->
+        <section class="technical-skillset">
+            <h2>Technical Skillset</h2>
+
+            <!-- Strong Skills -->
+            <section class="skillset sekillset-strong">
+                <h3>得意</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <!-- Java Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=java"/></div>
+                        <h4>Java</h4>
+                        <p>バックエンド開発を中心に業務で使用。</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <!-- Spring Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=spring"/></div>
+                        <h4>Spring Framework</h4>
+                        <p>Spring Frameworkを利用したWebアプリケーション開発。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Experience -->
+            <section class="skillset sekillset-experience">
+                <h3>業務経験あり</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <!-- AWS Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=aws"/></div>
+                        <h4>AWS</h4>
+                        <p>AWS SDKを利用したWebアプリケーション開発。</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <!-- Git Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=git"/></div>
+                        <h4>Git</h4>
+                        <p>ソースコード管理・開発業務・タスク管理で使用。</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <!-- Nginx Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=nginx"/></div>
+                        <h4>Nginx</h4>
+                        <p>Webサーバーとしての利用経験。</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <!-- Tomcat Icon -->
+                        <div class="skill-item_icon"><img th:src="@{/images/tomcat-icon.png}"/></div>
+                        <h4>Tomcat</h4>
+                        <p>Java Webアプリケーションの実行環境として使用。</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <!-- SQL Icon -->
+                        <div class="skill-item_icon"><img th:src="@{/images/sql-icon.png}"/></div>
+                        <h4>SQL</h4>
+                        <p>データ調査・開発業務などで使用。</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <!-- HTML / CSS Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=html"/></div>
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=css"/></div>
+                        <h4>HTML / CSS</h4>
+                        <p>Webページの実装・修正など。</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <!-- JavaScript Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=js"/></div>
+                        <h4>JavaScript</h4>
+                        <p>業務および個人学習で使用。</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Learning -->
+            <section class="skillset sekillset-learning">
+                <h3>学習中</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <!-- TypeScript Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=ts"/></div>
+                        <h4>TypeScript</h4>
+                        <p>個人開発を通して学習中。</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <!-- Next.js Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=nextjs"/></div>
+                        <h4>Next.js</h4>
+                        <p>個人開発を通して学習中。</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <!-- React Icon -->
+                        <div class="skill-item_icon"><img src="https://skillicons.dev/icons?i=react"/></div>
+                        <h4>React</h4>
+                        <p>Webフロントエンド技術として学習中。</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <!-- Work Experience -->
+        <section class="work-experience">
+            <h2>Work Experience</h2>
+
+            <div class="experience-list">
+                <!-- SaaS Development -->
+                <article class="experience-item">
+                    <h3>自社SaaS開発</h3>
+                    <h4>HR領域のSaaSプロダクト開発</h4>
+                    <p>
+                        自社で提供するHR領域のSaaSプロダクトの
+                        開発・保守業務を経験しています。
+                    </p>
+                </article>
+
+                <!-- Requirements & Design -->
+                <article class="experience-item">
+                    <h3>要件定義・設計</h3>
+                    <h4>機能追加における要件定義・設計</h4>
+                    <p>
+                        新機能の追加にあたり、
+                        要件整理、仕様検討、設計などを経験しています。
+                    </p>
+                </article>
+
+                <!-- Testing -->
+                <article class="experience-item">
+                    <h3>テスト</h3>
+                    <h4>自動テスト・打鍵テスト</h4>
+                    <p>
+                        自動テストの実装や、
+                        機能追加・改修に対する打鍵テストの設計を経験しています。
+                    </p>
+                </article>
+
+                <!-- Investigation & Support -->
+                <article class="experience-item">
+                    <h3>調査・顧客対応</h3>
+                    <h4>不具合・パフォーマンス問題などの調査</h4>
+                    <p>
+                        顧客からの問い合わせに対して、
+                        不具合やパフォーマンス遅延などの調査・対応を経験しています。
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Certification -->
+        <section class="certification">
+            <h2>Certification</h2>
+
+            <div class="certification-list">
+                <!-- 基本情報技術者試験 -->
+                <div class="certification-item">
+                    <h4>基本情報技術者試験</h4>
+                </div>
+
+                <!-- AWS SAA -->
+                <div class="certification-item">
+                    <h4>AWS Certified Solutions Architect - Associate</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+</body>
+
+</html>

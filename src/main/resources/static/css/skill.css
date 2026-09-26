@@ -1,0 +1,320 @@
+/* =========================
+   Header
+========================= */
+
+.header {
+    height: 64px;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+}
+
+.logo {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-button {
+    width: 32px;
+    height: 32px;
+
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #333;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    min-height: 80px;
+    padding: 25px 40px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #fff;
+}
+
+.footer p {
+    margin: 0;
+
+    color: #999;
+    font-size: 8px;
+}
+
+/* ========================================
+Skill Page
+======================================== */
+
+/* ---------- Base ---------- */
+
+.skill-page {
+max-width: 1100px;
+margin: 0 auto;
+padding: 80px 40px;
+color: #3f3028;
+}
+
+.skill-page h1,
+.skill-page h2,
+.skill-page h3,
+.skill-page h4,
+.skill-page p {
+margin-top: 0;
+}
+
+.skill-page h1 {
+margin-bottom: 16px;
+font-size: 42px;
+font-weight: 700;
+}
+
+.skill-page h2 {
+margin-bottom: 40px;
+font-size: 30px;
+}
+
+.skill-page h3 {
+margin-bottom: 24px;
+font-size: 22px;
+}
+
+.skill-page p {
+line-height: 1.8;
+}
+
+/* ---------- Page Title ---------- */
+
+.skill-page_title {
+margin-bottom: 100px;
+}
+
+.skill-page_lead {
+color: #75665d;
+font-size: 16px;
+}
+
+/* ========================================
+Technical Skillset
+======================================== */
+
+.technical-skillset {
+margin-bottom: 120px;
+}
+
+.skillset {
+margin-bottom: 70px;
+}
+
+.skillset:last-child {
+margin-bottom: 0;
+}
+
+/* ---------- Skill Items ---------- */
+
+.skill-list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.skill-item {
+padding: 28px;
+background-color: #ffffff;
+border: 1px solid #e5ddd7;
+border-radius: 12px;
+}
+
+.skill-item_icon {
+width: 56px;
+height: 56px;
+margin-bottom: 20px;
+}
+
+.skill-item_icon img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+.skill-item h4 {
+margin-bottom: 10px;
+font-size: 18px;
+}
+
+.skill-item p {
+margin-bottom: 0;
+color: #75665d;
+font-size: 14px;
+}
+
+/* ---------- Strong Skills ---------- */
+
+.skillset-strong .skill-list {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.skillset-strong .skill-item {
+padding: 36px;
+border: 2px solid #8b5e3c;
+}
+
+.skillset-strong .skill-item__icon {
+width: 64px;
+height: 64px;
+}
+
+.skillset-strong .skill-item h4 {
+font-size: 20px;
+}
+
+/* ---------- Business Experience ---------- */
+
+.skillset-experience .skill-item {
+background-color: #faf7f4;
+}
+
+/* ---------- Learning ---------- */
+
+.skillset-learning .skill-item {
+background-color: #f5f5f3;
+border-style: dashed;
+}
+
+/* ========================================
+Work Experience
+======================================== */
+
+.work-experience {
+margin-bottom: 80px;
+}
+
+.experience-list {
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+
+.experience-item {
+padding: 32px;
+background-color: #ffffff;
+border: 1px solid #e5ddd7;
+border-radius: 12px;
+}
+
+.experience-item h3 {
+margin-bottom: 12px;
+color: #8b5e3c;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.08em;
+}
+
+.experience-item h4 {
+margin-bottom: 14px;
+font-size: 20px;
+}
+
+.experience-item p {
+margin-bottom: 0;
+color: #75665d;
+}
+
+/* ========================================
+Certification
+======================================== */
+
+.certification {
+margin-bottom: 80px;
+}
+
+.certification-list {
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+
+.certification-item {
+padding: 32px;
+background-color: #ffffff;
+border: 1px solid #e5ddd7;
+border-radius: 12px;
+}
+
+.certification-item h4 {
+margin-bottom: 14px;
+font-size: 20px;
+}
+
+/* ========================================
+Responsive
+======================================== */
+
+@media (max-width: 768px) {
+
+.skill-page {
+    padding: 60px 20px;
+}
+
+.skill-page h1 {
+    font-size: 34px;
+}
+
+.skill-page h2 {
+    font-size: 26px;
+}
+
+.skill-list,
+.skillset-strong .skill-list {
+    grid-template-columns: 1fr;
+}
+
+.skill-page_header {
+    margin-bottom: 70px;
+}
+
+.technical-skillset {
+    margin-bottom: 80px;
+}
+
+.skillset {
+    margin-bottom: 50px;
+}
+
+.skill-item {
+    padding: 24px;
+}
+
+.skillset-strong .skill-item {
+    padding: 28px;
+}
+
+.experience-item {
+    padding: 24px;
+}
+
+}
