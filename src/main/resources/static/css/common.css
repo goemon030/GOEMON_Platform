@@ -1,0 +1,117 @@
+/* =========================
+   各ページで共通する以下部分をまとめたcss
+
+   ・ヘッダー
+   ・フッター
+   ・フォントカラー
+   ・バックグラウンドカラー
+========================= */
+
+
+/* =========================
+   Base
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans JP",
+        sans-serif;
+
+    color: #333;
+    background-color: #ede5dc;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    height: 64px;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+}
+
+.logo {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-button {
+    width: 32px;
+    height: 32px;
+
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #333;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    min-height: 80px;
+    padding: 25px 40px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #fff;
+}
+
+.footer p {
+    margin: 0;
+
+    color: #999;
+    font-size: 8px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        height: 56px;
+        padding: 0 20px;
+    }
+}
