@@ -1,0 +1,312 @@
+/* ========================================
+   Profile Page
+======================================== */
+
+.profile-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+}
+
+
+/* ========================================
+   Page Title
+======================================== */
+
+.page-title {
+    margin-bottom: 80px;
+}
+
+.page-title__main {
+    margin: 0;
+    color: #3d2b20;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   Section
+======================================== */
+
+.profile-section {
+    margin-bottom: 100px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.section-heading__number {
+    color: #a98a70;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #3d2b20;
+    font-size: 1.8rem;
+}
+
+
+/* ========================================
+   About Me
+======================================== */
+
+.about__content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+.about__content p {
+    margin: 0 0 24px;
+    color: #59463a;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.about__content p:last-child {
+    margin-bottom: 0;
+}
+
+.about__lead {
+    margin-bottom: 36px !important;
+    color: #3d2b20 !important;
+    font-size: 1.35rem !important;
+    font-weight: 600;
+    line-height: 1.9 !important;
+}
+
+
+/* ========================================
+   Career Timeline
+======================================== */
+
+.career-timeline {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    padding-left: 45px;
+}
+
+/* 縦線 */
+.career-timeline::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    width: 1px;
+    background-color: #cbb8a6;
+}
+
+.career-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.career-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* タイムラインの丸 */
+.career-item__marker {
+    position: absolute;
+    top: 7px;
+    left: -41px;
+
+    width: 10px;
+    height: 10px;
+
+    border: 2px solid #8a6a52;
+    border-radius: 50%;
+    background-color: #f8f4ef;
+}
+
+
+/* Career Content */
+
+.career-item__period {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    color: #8a6a52;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.career-item h3 {
+    margin: 0 0 10px;
+
+    color: #3d2b20;
+    font-size: 1.15rem;
+}
+
+.career-item p {
+    max-width: 700px;
+    margin: 0;
+
+    color: #59463a;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   Interests
+======================================== */
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+
+/* Card */
+
+.interest-card {
+    position: relative;
+
+    padding: 32px;
+    border: 1px solid #ded1c4;
+    border-radius: 14px;
+
+    background-color: #fcfaf7;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(80, 55, 40, 0.08);
+}
+
+
+/* 少しだけカードを傾ける */
+
+.interest-card--coffee {
+    transform: rotate(-1deg);
+}
+
+.interest-card--music {
+    transform: rotate(1deg);
+}
+
+.interest-card--cube {
+    transform: rotate(0.7deg);
+}
+
+.interest-card--programming {
+    transform: rotate(-0.8deg);
+}
+
+.interest-card:hover {
+    transform: translateY(-5px) rotate(0);
+}
+
+
+/* Icon */
+
+.interest-card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+    background-color: #eee4da;
+
+    font-size: 1.4rem;
+}
+
+
+/* Text */
+
+.interest-card h3 {
+    margin: 0 0 12px;
+
+    color: #3d2b20;
+    font-size: 1.15rem;
+}
+
+.interest-card p {
+    margin: 0;
+
+    color: #59463a;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+    .profile-page {
+        padding: 60px 20px 80px;
+    }
+
+    .page-title {
+        margin-bottom: 60px;
+    }
+
+    .page-title__main {
+        font-size: 2.3rem;
+    }
+
+    .profile-section {
+        margin-bottom: 70px;
+    }
+
+    .section-heading {
+        margin-bottom: 28px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .about__content {
+        padding: 0;
+    }
+
+    .about__lead {
+        font-size: 1.15rem !important;
+    }
+
+    .career-timeline {
+        padding-left: 35px;
+    }
+
+    .career-item__marker {
+        left: -31px;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .interest-card--coffee,
+    .interest-card--music,
+    .interest-card--cube,
+    .interest-card--programming {
+        transform: none;
+    }
+
+}

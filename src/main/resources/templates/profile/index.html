@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | GOEMON</title>
+
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/profile.css}">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <main class="profile-page">
+        <!-- Page Title -->
+        <section class="page-title">
+            <h1 class="page-title__main">Profile</h1>
+        </section>
+
+        <!-- About Me -->
+        <section class="profile-section about">
+
+            <div class="section-heading">
+                <span class="section-heading__number">01</span>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about__content">
+                <p class="about__lead">
+                    Java・Springを中心にWebアプリケーション開発に携わっている
+                    ソフトウェアエンジニアです。
+                </p>
+                <p>
+                    大学では情報工学を専攻し、卒業後は電気技術職を経験しました。
+                    その後、より直接的に「ものを作る仕事」に携わりたいと考え、
+                    ITエンジニアへ転職しました。
+                </p>
+                <p>
+                    現在はクラウド型人事パッケージの開発・保守に携わり、
+                    Javaによるバックエンド開発を中心に、
+                    設計・実装・テスト・パフォーマンス調査などを経験しています。
+                </p>
+                <p>
+                    問題を整理し、原因を一つずつ切り分けながら
+                    解決していくことが好きです。
+                </p>
+            </div>
+        </section>
+
+        <!-- Career -->
+        <section class="profile-section career">
+
+            <div class="section-heading">
+                <span class="section-heading__number">02</span>
+                <h2>Career</h2>
+            </div>
+
+            <div class="career-timeline">
+                <!-- University -->
+                <div class="career-item">
+                    <div class="career-item__marker"></div>
+                    <div class="career-item__content">
+                        <span class="career-item__period">
+                            2017 - 2021
+                        </span>
+
+                        <h3>大学</h3>
+
+                        <p>
+                            情報工学を専攻し、4年間にわたって
+                            プログラミングや情報システムについて学習。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Electrical Engineer -->
+                <div class="career-item">
+                    <div class="career-item__marker"></div>
+                    <div class="career-item__content">
+
+                        <span class="career-item__period">
+                            2021 - 2023
+                        </span>
+
+                        <h3>公務員・電気技術職</h3>
+
+                        <p>
+                            電気設備の保守・点検・設計補助などを担当。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Software Engineer -->
+                <div class="career-item">
+                    <div class="career-item__marker"></div>
+                    <div class="career-item__content">
+                        <span class="career-item__period">
+                            2023 - 現在
+                        </span>
+
+                        <h3>ソフトウェアエンジニア</h3>
+
+                        <p>
+                            クラウド型人事パッケージの開発・保守に従事。
+                            Java / Springを中心とした開発、
+                            パフォーマンス調査、テストなどを担当。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests -->
+        <section class="profile-section interests">
+
+            <div class="section-heading">
+                <span class="section-heading__number">03</span>
+                <h2>Interests</h2>
+            </div>
+
+            <div class="interests-grid">
+
+                <article class="interest-card interest-card--coffee">
+                    <div class="interest-card__icon">☕</div>
+                    <h3>Coffee</h3>
+                    <p>
+                        豆や抽出方法を試しながら、
+                        自分好みのコーヒーを探すのが好きです。
+                    </p>
+                </article>
+
+                <article class="interest-card interest-card--music">
+                    <div class="interest-card__icon">🎧</div>
+                    <h3>Music Games</h3>
+                    <p>
+                        beatmaniaを中心に音楽ゲームをプレイ。
+                        譜面を研究して攻略していく過程が好きです。
+                    </p>
+                </article>
+
+                <article class="interest-card interest-card--cube">
+                    <div class="interest-card__icon">🧩</div>
+                    <h3>Rubik's Cube</h3>
+                    <p>
+                        ルービックキューブも好きで、
+                        60秒以内を目標に練習しています。
+                    </p>
+                </article>
+
+                <article class="interest-card interest-card--programming">
+                    <div class="interest-card__icon">💻</div>
+                    <h3>Programming</h3>
+                    <p>
+                        新しい技術を試したり、
+                        小さなWebサービスを作ったりしています。
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+</body>
+</html>
